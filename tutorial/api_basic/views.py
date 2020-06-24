@@ -24,13 +24,8 @@ from .utils import render_to_pdf #created in step 4
 
 class GeneratePdf(View):
     def get(self, request, *args, **kwargs):
-        data = {
-             'today': 44, 
-             'amount': 39.99,
-            'customer_name': 'Cooper Mann',
-            'order_id': 1233434,
-        }
-        pdf = render_to_pdf('pdf/invoice.html', data)
+        
+        pdf = render_to_pdf('pdf/invoice.html')
         return HttpResponse(pdf, content_type='application/pdf')
 
 

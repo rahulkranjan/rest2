@@ -5,6 +5,7 @@ from rest_framework.routers import DefaultRouter
 from rest_framework_jwt.views import obtain_jwt_token
 from .views import GeneratePdf
 
+
 router = DefaultRouter()
 router.register('article', ArticleViewSet, basename='article')
 
@@ -17,6 +18,7 @@ urlpatterns = [
     path('viewset/<int:id>/', include(router.urls)),
     path('api-token-auth/', obtain_jwt_token),
     path('pdf/', GeneratePdf.as_view()),
+    
 
  
  

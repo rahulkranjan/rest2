@@ -1,53 +1,136 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Title</title>
-        <style type="text/css">
-            body {
-                font-weight: 200;
-                font-size: 14px;
-            }
-            .header {
-                font-size: 20px;
-                font-weight: 100;
-                text-align: center;
-                color: #007cae;
-            }
-            .title {
-                font-size: 22px;
-                font-weight: 100;
-               /* text-align: right;*/
-               padding: 10px 20px 0px 20px;  
-            }
-            .title span {
-                color: #007cae;
-            }
-            .details {
-                padding: 10px 20px 0px 20px;
-                text-align: left !important;
-                /*margin-left: 40%;*/
-            }
-            .hrItem {
-                border: none;
-                height: 1px;
-                /* Set the hr color */
-                color: #333; /* old IE */
-                background-color: #fff; /* Modern Browsers */
-            }
-        </style>
-    </head>
-    <body>
-        <div class='wrapper'>
-            <div class='header'>
-                <p class='title'>Invoice # </p>
+
+<head>
+    <style>
+        #customers {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        #customers th {
+
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex;  width: 100%; border-bottom: solid 0.5px;  margin-bottom: 10px">
+            <div style="width: 15%"><img src="cbse.png" width="55px" /></div>
+            <div style="text-align: center;padding: 5px 8px;width: 70%">
+                <div style="
+        padding-bottom: 0.1px; font-weight: 600;font-size: 24px; text-transform: capitalize;">
+                    Gungun International School
+                </div>
+                <div style="
+        padding-bottom: 0.1px; font-weight: 600;font-size: 12px;">
+                    Affiliated to CBSE, Affiliation No. 114554
+                </div>
+                <div style="
+        padding-bottom: 0.1px;font-weight: 600;font-size: 12px;">
+                    Address123,Address,State
+                </div>
+                <div style="
+        padding-bottom: 0.1px;font-weight: 600;font-size: 12px;">
+                    Ph. 011-55484774, Email: Demo@trixno.com
+                </div>
             </div>
-        <div>
-        <div class='details'>
-            Bill to: <br/>
-            Amount:  <br/>
-            Date: 
-            <hr class='hrItem' />
+            <div style="width: 15%">
+                <!-- <img src="cbse.png" width="55px" /> -->
+            </div>
+            <!-- <div style="width: 15%"><img src="cbse.png" width="45px" /></div> -->
         </div>
-    </div>
-    </body>
+
+
+
+    </header>
+    <main>
+        <hr>
+        <table id="customers">
+            <div style="text-align: center;padding-bottom: 10px; font-weight: 600;font-size: 16px;">School Leaving
+                Certificate</div>
+            <p style="font-size: 14px; line-height: 1.5;padding-bottom: 10px;">Certified that <span
+                    style="text-transform: uppercase; font-weight: 600">Ravi Kumar Ranjan</span> S/o <span
+                    style="text-transform: uppercase; font-weight: 600">Father's name</span>
+                attended this school from <span style="text-transform: uppercase; font-weight: 600">Admission
+                    date</span>
+                and now leaves the school having paid all dues to date. As per our school record his/her information is
+                as under mentioned.</p>
+            <!-- <div style="display: flex;"> -->
+
+
+            <tr>
+                <td>Student's Name</td>
+                <td>:</td>
+                <td>Student's Name</td>
+            </tr>
+            <tr>
+                <td>Berglunds snabbköp</td>
+                <td>Christina Berglund</td>
+                <td>Sweden</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Königlich Essen</td>
+                <td>Philip Cramer</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+            <tr>
+                <td>North/South</td>
+                <td>Simon Crowther</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Paris spécialités</td>
+                <td>Marie Bertrand</td>
+                <td>France</td>
+            </tr>
+        </table>
+    </main>
+</body>
+
 </html>
