@@ -14,6 +14,24 @@ from rest_framework.authentication import SessionAuthentication,TokenAuthenticat
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import viewsets
 from django.shortcuts import get_object_or_404
+from django.views.generic import View
+from .utils import render_to_pdf
+
+from django.http import HttpResponse
+from django.views.generic import View
+
+from .utils import render_to_pdf #created in step 4
+
+class GeneratePdf(View):
+    def get(self, request, *args, **kwargs):
+        data = {
+             'today': 44, 
+             'amount': 39.99,
+            'customer_name': 'Cooper Mann',
+            'order_id': 1233434,
+        }
+        pdf = render_to_pdf('pdf/invoice.html', data)
+        return HttpResponse(pdf, content_type='application/pdf')
 
 
 class ArticleViewSet(viewsets.ModelViewSet):
